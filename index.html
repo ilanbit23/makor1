@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>מקור ראשון - מחולל העיתונים</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta property="og:title" content="מחולל העיתונים">
+    <meta property="og:description" content="חולל לעצמך עיתון">
+    <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
+    <meta property="og:url" content="https://misterBIT.co.il">
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v8.0" nonce="u50P5aeY"></script>
+
+    <div class="container">
+        <header>
+            <h1>חדשותטובמטור</h1>
+            <h2>מחולל החדשות הטובות</h2>
+        </header>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolores dolorem sunt iure aut, id architecto expedita alias
+            hic! Praesentium qui dignissimos pariatur iusto explicabo est iste consectetur at sunt?
+        </p>
+        <form onSubmit="generate(event)">
+            <input type="text" placeholder="(שם פרטי)" name="firstName" value="משה אופניק" />
+            <input type="text" placeholder="(שם מוצר)" name="productName" value="חלב חמוץ">
+            <button>
+                &gt; תשגרו לי חדשות טובות עכשיו! &lt;
+            </button>
+        </form>
+        <!-- TODO: use grid -->
+        <section class="output">
+            <article class="txt1">
+                xxxx
+            </article>
+            <article class="txt2">
+                yyyy
+            </article>
+        </section>
+        <section>
+            <a id="download" download="עיתון.png" href="#" onclick="downloadImg(this)">
+                הורד
+            </a>
+            <!-- <button onclick="share()">Share</button> -->
+            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small">
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+                    class="fb-xfbml-parse-ignore">שתף</a>
+            </div>
+        </section>
+        <section class="canvas-container" hidden>
+
+        </section>
+
+    </div>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    background-color: orange;
+}
+
+.container{
+    max-width: 450px;
+    margin: 0 auto;
+    border:     1px solid white;    
+    padding: 40px 20px;
+}
+
+ .container header {
+     text-align: center;
+ }
+
+ .container h2 {
+     background-color: white;
+     padding: 10px;
+ }
+
+ .output .txt1 {
+     background-color: orangered;
+     color: white;
+     padding: 10px;
+ }
+ .output .txt2 {
+     background-color: greenyellow;
+     padding: 10px;
+ }
