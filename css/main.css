@@ -2,31 +2,201 @@ body {
     margin: 0;
     padding: 0;
     direction: rtl;
-    background-color: orange;
 }
 
-.container{
-    max-width: 450px;
-    margin: 0 auto;
-    border:     1px solid white;    
-    padding: 40px 20px;
+.bg {
+    background: url(/img/back1.jpg) no-repeat center center fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 100vh;
+    background-color: #025b7d;
 }
 
- .container header {
-     text-align: center;
- }
+.container {
+    padding: 30px;
+}
 
- .container h2 {
-     background-color: white;
-     padding: 10px;
- }
+.container form {
+    max-width: 360px;
+    margin: auto;
+}
 
- .output .txt1 {
-     background-color: orangered;
-     color: white;
-     padding: 10px;
- }
- .output .txt2 {
-     background-color: greenyellow;
-     padding: 10px;
- }
+.generate-news {
+    min-width: 368px;
+    height: 35px;
+    font-size: 1.2em;
+    font-family: fangsong;
+    font-weight: bold;
+    background-color: #feb244;
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.generate-news:hover {
+    color: white;
+}
+
+.container .like-news {
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.75em;
+    margin: 140px auto 10px auto;
+    max-width: 360px;
+}
+
+.container h2 {
+    background-color: white;
+    padding: 10px;
+}
+
+.container input {
+    width: 100%;
+    margin-bottom: 5px;
+    border: none;
+    height: 18px;
+    font-size: 0.7em;
+}
+
+.canvas-container {
+    background: url(/img/back.jpg) no-repeat center center fixed;
+    height: 100%;
+    background-size: cover;
+}
+
+.canvas-container .output {
+    background: url(/img/news.png) no-repeat center center fixed;
+    height: 100vh;
+    max-width: 700px;
+    margin: auto;
+    background-size: cover;
+    position: relative;
+    display: none;
+}
+
+.output article {
+    color: white;
+    padding: 10px;
+    font-family: sans-serif;
+    position: absolute;
+}
+
+.txt1 {
+    font-size: 0.7em;
+    top: 145px;
+    left: 78px;
+}
+
+.txt2 {
+    top: 198px;
+    font-size: 1.1em;
+    right: 95px;
+}
+
+.txt3 {
+    top: 200px;
+    left: 190px;
+    font-size: 0.8em;
+}
+
+.txt4 {
+    top: 338px;
+    font-size: 0.78em;
+    right: 95px;
+}
+
+.txt5 {
+    top: 335px;
+    font-size: 0.75em;
+    left: 200px;
+}
+
+.txt6 {
+    top: 403px;
+    left: 197px;
+    font-size: 0.75em;
+}
+
+.download {
+    position: absolute;
+    top: 25%;
+    left: -75px;
+    background-size: contain;
+    min-width: 100px;
+    height: 100px;
+    background-image: url(/img/b1.png);
+}
+
+
+/* fb-button-modify */
+
+.fb-share-button {
+    position: absolute !important;
+    background-image: url("/img/b2.png");
+    top: 41%;
+    left: -75px;
+    background-size: contain;
+    min-width: 100px;
+    height: 100px;
+}
+
+.fb_iframe_widget span {
+    width: 100px !important;
+    height: 100px !important;
+    top: 40px;
+    right: 20px;
+    opacity: 0;
+}
+
+.fb_iframe_widget iframe {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.plugin {
+    line-height: 7.28;
+}
+
+.inlineBlock {
+    min-width: 100px;
+    min-height: 100px;
+    display: inline-block;
+    zoom: 10;
+}
+
+@media only screen and (max-width: 600px) {
+    .bg {
+        background: url(/img/back-mobile.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #026d97;
+    }
+    .container {
+        padding: 25px 20px 0 20px;
+    }
+    .container .like-news {
+        margin: 125px auto 10px auto;
+    }
+    .container input {
+        height: 24px;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .canvas-container .output {
+        background: url(/img/news.png) no-repeat center center fixed;
+        height: 100vh;
+        max-width: unset;
+        width: 100%;
+        margin: 0;
+        background-size: cover;
+    }
+    .generate-news {
+        min-width: 325px;
+    }
+}
