@@ -2,11 +2,6 @@ var txt1 = `
 יוצא לאור בcity
 עורך ראשי: firstName reporterFamilyName 
 `
-    // var txt2 = `
-    // מחירי age  בנסיקה: firstName אישר יבוא ירקות באיחור
-    // רגע לפני החג, בעוד שמחירי הירקות בעלייה מתמדת מאז גל החום ובצל המחסור החמור במלפפונים, שמחירם לצרכן הגיע עד ל-14.90 שקל לק"ג - firstName חתם על צו יבוא ללא מכס. ובינתיים: חשש למחסור גם age 
-    // `
-
 var txt2 = `נבחרת ישראל
 בhobby
 העפילה לשלב
@@ -40,12 +35,6 @@ var txt6 = `משטרת ישראל החליטה כי מעתה
   עמוד 24
 `
 
-const shareData = {
-    title: 'עיתון',
-    text: 'הכינו לעצמכם עיתון',
-    url: 'https://misterBIT.co.il',
-}
-
 function generate(event) {
     event.preventDefault();
     replaceTxt('firstName');
@@ -58,9 +47,7 @@ function generate(event) {
     replaceTxt('drink');
     replaceTxt('favoriteColor');
     replaceTxt('lastLetter');
-    // const elFirstName = document.querySelector('input[name=firstName]')
-    // const firstName = elFirstName.value;
-    // txt1 = txt1.replace(new RegExp(`firstName`, 'g'), firstName)
+
     document.querySelector('.txt1').innerText = txt1;
     document.querySelector('.txt2').innerText = txt2;
     document.querySelector('.txt3').innerText = txt3;
@@ -94,12 +81,17 @@ function downloadImg(elLink) {
     elLink.href = imgContent
 }
 
+// const shareData = {
+//     title: 'עיתון',
+//     text: 'הכינו לעצמכם עיתון',
+//     url: 'https://misterBIT.co.il',
+// }
 
-async function share() {
-    try {
-        await navigator.share(shareData)
-        console.log('Shared successfully')
-    } catch (err) {
-        console.log('Cannot share', err)
-    }
-}
+// async function share() {
+//     try {
+//         await navigator.share(shareData)
+//         console.log('Shared successfully')
+//     } catch (err) {
+//         console.log('Cannot share', err)
+//     }
+// }

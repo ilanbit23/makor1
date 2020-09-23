@@ -166,6 +166,12 @@ body {
     zoom: 10;
 }
 
+@media only screen and (min-width: 600px) {
+    .mobile-bg {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .bg {
         background: url(../img/back-mobile.jpg);
@@ -180,7 +186,7 @@ body {
         margin: 125px auto 10px auto;
     }
     .container input {
-        height: 24px;
+        height: 18px;
     }
     img {
         width: 100%;
@@ -188,15 +194,80 @@ body {
         margin: 0;
         padding: 0;
     }
+    .canvas-container {
+        background: none;
+    }
     .canvas-container .output {
-        background: url(../img/news.png) no-repeat center center fixed;
+        /* background: url(../img/news.png) no-repeat center center fixed;
         height: 100vh;
-        max-width: unset;
         width: 100%;
         margin: 0;
-        background-size: cover;
+        background-size: cover; */
+        background: none;
     }
     .generate-news {
         min-width: 325px;
+    }
+    .mobile-bg {
+        width: 200%;
+        height: 130vh;
+        position: absolute;
+        right: -185px;
+        top: -110px;
+    }
+    .txt1 {
+        top: 86px;
+        left: 3px;
+        max-width: 60px;
+        font-size: 0.6em;
+    }
+    .txt2 {
+        top: 158px;
+        font-size: 0.9em;
+        right: 3px;
+    }
+    .txt3 {
+        top: 159px;
+        left: 72px;
+        font-size: 0.6em;
+    }
+    .txt4 {
+        top: 346px;
+        font-size: 0.6em;
+        right: 1px;
+    }
+    .txt5 {
+        top: 338px;
+        font-size: 0.65em;
+        left: 63px;
+        max-width: 140px;
+    }
+    .txt6 {
+        top: 430px;
+        left: 68px;
+        font-size: 0.6em;
+        max-width: 135px;
+    }
+    .download {
+        position: absolute;
+        top: 85%;
+        right: 30%;
+        left: unset;
+        background-size: contain;
+        min-width: 60px;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-image: url(../img/b1.png);
+    }
+    .fb-share-button {
+        position: absolute !important;
+        background-image: url(../img/b2.png);
+        top: 85%;
+        right: 35%;
+        left: unset;
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-width: 60px;
+        height: 60px;
     }
 }
