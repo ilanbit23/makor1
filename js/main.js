@@ -1,5 +1,4 @@
-var txt1 = `
-יוצא לאור בcity
+var txt1 = `יוצא לאור בcity
 עורך ראשי: firstName reporterFamilyName 
 `
 var txt2 = `נבחרת ישראל
@@ -29,10 +28,9 @@ var txt5 = `בקידוחים שנערכו השבוע באזור  lastPlace,
  התגלה מצבור של drink בהיקף
 המוערך בכ age- מיליון חביות | עמוד 18`
 
-var txt6 = `משטרת ישראל החליטה כי מעתה 
-תושבים ששם משפחתם מתחיל באות lastLetter',
- לא יקבלו שיחות טלפון מקבר רחל
-  עמוד 24
+var txt6 = `משטרת ישראל החליטה כי מעתה תושבים 
+ ששם משפחתם מתחיל באות lastLetter' לא יקבלו,
+  שיחות טלפון מקבר רחל | עמוד 24
 `
 
 function generate(event) {
@@ -57,8 +55,9 @@ function generate(event) {
 
     document.getElementById("bg").remove();
     document.getElementById("output").style.display = 'block';
+    document.querySelector('.html-background').style.background = 'none';
 
-    html2canvas(document.querySelector(".output")).then(canvas => {
+    html2canvas(document.querySelector(".output"), { scale: 1 }).then(canvas => {
         document.querySelector('.canvas-container').appendChild(canvas)
     });
 

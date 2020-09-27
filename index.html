@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html-background">
 
 <head>
     <meta charset="UTF-8">
@@ -19,52 +19,68 @@
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v8.0" nonce="u50P5aeY"></script>
     <div id="bg" class="bg">
-        <div class="container">
-            <p class="like-news">
-                אוהבים חדשות אבל נמאס לכם לשמוע כל הזמן כמה רע פה? <br />
-                <b>הנה משהו שבא לכם טוב!</b> <br /> מחולל החדשות הטובות של מרכזי הצעירים בישראל, שיכין לכם מהדורה חיובית במיוחד. <br /> הכניסו כמה פרטים קטנים, לחצו על המחולל שלנו <br /> ותקבלו מקבץ אופטימי, שלא שמעתם כמותו מאז ומעולם.
-            </p>
-            <form onSubmit="generate(event)">
-                <input type="text" placeholder="(שם פרטי)" name="firstName" />
-                <input type="text" placeholder="(גיל)" name="age">
-                <input type="text" placeholder="(עיר מגורים)" name="city">
-                <input type="text" placeholder="(שם משפחה של כתב חדשות אהוב)" name="reporterFamilyName">
-                <input type="text" placeholder="(תחביב)" name="hobby">
-                <input type="text" placeholder="(החופשה הבאה שלכם תהיה ב)" name="vacation">
-                <input type="text" placeholder="(המקום האחרון בו ביקרתם)" name="lastPlace">
-                <input type="text" placeholder="(משקה אהוב)" name="drink">
-                <input type="text" placeholder="(צבע אהוב)" name="favoriteColor">
-                <input type="text" placeholder="(האות הראשונה בשם המשפחה)" name="lastLetter">
+        <img src="./img/mobile/back-mobile.jpg" alt="back-mobile" class="back-mobile">
+        <!-- <div class="container"> -->
+        <p class="like-news">
+            אוהבים חדשות אבל נמאס לכם לשמוע כל הזמן כמה רע פה? <br />
+            <b>הנה משהו שבא לכם טוב!</b> <br /> מחולל החדשות הטובות של מרכזי הצעירים בישראל, שיכין לכם מהדורה חיובית במיוחד. <br /> הכניסו כמה פרטים קטנים, לחצו על המחולל שלנו <br /> ותקבלו מקבץ אופטימי, שלא שמעתם כמותו מאז ומעולם.
+        </p>
+        <form onSubmit="generate(event)">
+            <input type="text" placeholder="(שם פרטי)" name="firstName" />
+            <input type="text" placeholder="(גיל)" name="age">
+            <input type="text" placeholder="(עיר מגורים)" name="city">
+            <input type="text" placeholder="(שם משפחה של כתב חדשות אהוב)" name="reporterFamilyName">
+            <input type="text" placeholder="(תחביב)" name="hobby">
+            <input type="text" placeholder="(החופשה הבאה שלכם תהיה ב)" name="vacation">
+            <input type="text" placeholder="(המקום האחרון בו ביקרתם)" name="lastPlace">
+            <input type="text" placeholder="(משקה אהוב)" name="drink">
+            <input type="text" placeholder="(צבע אהוב)" name="favoriteColor">
+            <input type="text" placeholder="(האות הראשונה בשם המשפחה)" name="lastLetter">
 
-                <button class="generate-news">
-                    &gt; תשגרו לי חדשות טובות עכשיו! &lt;
-                </button>
-            </form>
-        </div>
+            <button class="generate-news">
+                &gt; תשגרו לי חדשות טובות עכשיו! &lt;
+            </button>
+        </form>
+        <!-- </div> -->
     </div>
     <!-- TODO: use grid -->
     <!-- hidden -->
     <div class="canvas-container">
         <div id="output" class="output">
-            <img class="mobile-bg" src="./img/news.png" alt="">
-            <article class="txt1">
-                xxxx
-            </article>
-            <article class="txt2">
-                yyyy
-            </article>
-            <article class="txt3">
-                yyyy
-            </article>
-            <article class="txt4">
-                yyyy
-            </article>
-            <article class="txt5">
-                yyyy
-            </article>
-            <article class="txt6">
-                yyyy
-            </article>
+            <!-- <img class="mobile-bg" src="./img/mobile/back-bottom-mobile.jpg" alt=""> -->
+            <div class="news">
+                <div class="txt1-container">
+                    <p class="txt1">
+                    </p>
+                </div>
+                <div class="txt2-container">
+                    <p class="txt2">
+                    </p>
+                    <img src="./img/desktop/pic2.jpg" alt="">
+                </div>
+                <div class="txt3-container">
+                    <p class="txt3">
+                    </p>
+                    <img src="./img/desktop/pic3.jpg" alt="">
+                </div>
+                <div class="txt4-container">
+                    <p class="txt4">
+                    </p>
+                    <img src="./img/desktop/pic4.jpg" alt="">
+                </div>
+                <div class="txt5-container">
+                    <p class="txt5">
+                    </p>
+                    <img src="./img/desktop/pic5.jpg" alt="">
+                </div>
+                <div class="txt6-container">
+                    <p class="txt6">
+                    </p>
+                    <img src="./img/desktop/pic6.jpg" alt="">
+                </div>
+
+            </div>
+
             <a class="download" id="download" download="עיתון.png" href="#" onclick="downloadImg(this)">
             </a>
             <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-size="small">
