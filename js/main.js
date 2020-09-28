@@ -57,7 +57,12 @@ function generate(event) {
     document.getElementById("output").style.display = 'block';
     document.querySelector('.html-background').style.background = 'none';
 
-    html2canvas(document.querySelector(".output"), { scale: 1 }).then(canvas => {
+    html2canvas(document.querySelector(".output"), {
+        scale: 1.5
+    }, {
+        width: 730,
+        height: 700
+    }).then(canvas => {
         document.querySelector('.canvas-container').appendChild(canvas)
     });
 
