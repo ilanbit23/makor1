@@ -66,14 +66,16 @@ input {
     position: relative;
     display: none;
     height: 100vh;
-    padding: 167px 25px 0 0;
+    /* padding: 167px 25px 0 0; */
 }
 
 .news {
     display: grid;
     grid-gap: 5px;
     direction: ltr;
-    max-width: 520px;
+    max-width: 530px;
+    padding-top: 169px;
+    padding-right: 25px;
     margin: auto;
     /* letter-spacing: 0.2px; */
     /* max-width: 730px; */
@@ -194,25 +196,29 @@ input {
     padding: 12px 5px 0 5px;
 }
 
-.download {
+.social {
     position: absolute;
     top: 25%;
     left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.download {
     background-size: contain;
     min-width: 100px;
     height: 100px;
-    background-image: url(../img/b1.png);
+    background-image: url("../img/b1.png");
+    background-repeat: no-repeat;
 }
 
 
 /* fb-button-modify */
 
 .fb-share-button {
-    position: absolute !important;
     background-image: url("../img/b2.png");
-    top: 41%;
-    left: 40px;
     background-size: contain;
+    background-repeat: no-repeat;
     min-width: 100px;
     height: 100px;
 }
@@ -241,17 +247,16 @@ input {
     zoom: 10;
 }
 
-@media only screen and (min-width: 924px) {
-    .canvas-container .output {
-        padding: 169px 25px 0 0;
-        /* padding: 235px 25px 0 0; */
+@media only screen and (max-width: 924px) {
+    .social {
+        top: 80%;
+        left: 33%;
+        display: flex;
+        flex-direction: row;
     }
 }
 
 @media only screen and (min-width: 1200px) {
-    .canvas-container .output {
-        padding: 142px 35px 0 0;
-    }
     .news {
         max-width: 650px;
     }
@@ -276,28 +281,12 @@ input {
         margin-bottom: 20px;
     }
     .download {
-        position: absolute;
-        right: 35%;
-        left: unset;
-        background-size: contain;
-        min-width: 60px;
-        height: 60px;
-        background-repeat: no-repeat;
-        background-image: url(../img/b1.png);
-    }
-    .fb-share-button {
-        position: absolute !important;
-        background-image: url(../img/b2.png);
-        right: 45%;
-        left: unset;
-        background-size: contain;
-        background-repeat: no-repeat;
         min-width: 60px;
         height: 60px;
     }
-    .download,
     .fb-share-button {
-        top: 66%;
+        min-width: 60px;
+        height: 60px;
     }
 }
 
@@ -311,19 +300,17 @@ input {
     .generate-news {
         min-width: 324px;
     }
-    .canvas-container {
-        /* background: none; */
-    }
     .canvas-container .output {
-        padding: 122px 0px 0 0;
         background: url(../img/mobile/back-bottom-mobile.jpg);
         background-position: top;
         background-repeat: no-repeat;
         background-size: contain;
     }
     .news {
-        max-width: 390px;
-        margin: 22px auto;
+        max-width: 330px;
+        padding-top: 120px;
+        padding-right: 0;
+        grid-gap: 3px;
     }
     .txt1-container {
         margin-right: -65px;
@@ -332,7 +319,7 @@ input {
         font-size: 0.5em;
         background-color: transparent;
         max-width: 45px;
-        padding: 2px 0px 2px 15px;
+        padding: 2px 0px 2px 2px;
     }
     .txt2-container img {
         max-width: 95px;
@@ -379,15 +366,14 @@ input {
     .txt6-container {
         box-shadow: unset;
     }
-    .download,
-    .fb-share-button {
-        top: 70%;
+    .social {
+        top: 95%;
     }
 }
 
 @media only screen and (max-width: 440px) {
     .news {
-        max-width: 360px;
-        margin: 3px auto;
+        max-width: unset;
+        margin: 0 auto;
     }
 }
