@@ -67,6 +67,7 @@ function generate(event) {
     }).then(canvas => {
         document.querySelector('.canvas-container').appendChild(canvas);
         //output.style.display = 'none';
+        canvas.style.display = "none";
     });
 
 }
@@ -86,6 +87,7 @@ function downloadImg(elLink) {
     const elCanvas = document.querySelector('canvas');
     var imgContent = elCanvas.toDataURL()
     elLink.href = imgContent
+    console.log('elLink', elLink.href)
 }
 
 // const shareData = {
