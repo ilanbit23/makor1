@@ -226,25 +226,16 @@ input {
 .fb_iframe_widget span {
     width: 100px !important;
     height: 100px !important;
-    top: 40px;
-    right: 20px;
+    top: 5px;
+    right: 0px;
     opacity: 0;
 }
 
 .fb_iframe_widget iframe {
     width: 100px !important;
     height: 100px !important;
-}
-
-.plugin {
-    line-height: 7.28;
-}
-
-.inlineBlock {
-    min-width: 100px;
-    min-height: 100px;
-    display: inline-block;
-    zoom: 10;
+    top: 30px;
+    right: 17px;
 }
 
 @media only screen and (max-width: 924px) {
@@ -287,6 +278,19 @@ input {
     .fb-share-button {
         min-width: 60px;
         height: 60px;
+    }
+    .fb_iframe_widget iframe {
+        width: 60px !important;
+        height: 60px !important;
+        top: 10px;
+        right: 2px;
+    }
+    .fb_iframe_widget span {
+        width: 60px !important;
+        height: 60px !important;
+        top: 5px;
+        right: 0px;
+        opacity: 0;
     }
 }
 

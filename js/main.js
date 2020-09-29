@@ -58,19 +58,7 @@ function generate(event) {
     var output = document.getElementById("output");
     var news = document.querySelector(".news");
     output.style.display = 'block';
-    // output.style.backgroundSize = 'contain';
-    //output.style.padding = '250px 25px 0 0';
-    // news.style.maxWidth = '500px';
     news.style.letterSpacing = '0.2px';
-    // document.querySelector('.pic2').style.maxWidth = '152px';
-    // document.querySelector('.pic4').style.height = '95px';
-    // document.querySelector('.pic5').style.maxWidth = '90px';
-    // document.querySelector('.pic5').style.padding = '5px 14px 2px 2px';
-
-    // document.querySelector('.txt2').style.padding = '5px 7px 2px 10px';
-    // document.querySelector('.txt3').style.padding = '5px 7px 2px 10px';
-    // document.querySelector('.txt4').style.padding = '5px 7px 3px 10px';
-    // document.querySelector('.txt6').style.padding = '3px 5px 0 5px';
 
     html2canvas(document.querySelector(".output"), {
         // scale: 1,
